@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EBDV 2026 | Más que vencedores</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --primary:#312e81;
+  --secondary:#4338ca;
+  --neon:rgba(99,102,241,.6);
+  --dark:#020617;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#f8fafc,#eef2ff);
+  color:#1f2937;
+}
+
+/* HERO */
+.hero-top{
+  background:linear-gradient(135deg,#312e81,#4338ca);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero-top h1{
+  font-size:3rem;
+  letter-spacing:4px;
+  text-shadow:0 0 20px var(--neon);
+}
+
+.hero-top p{
+  margin-top:12px;
+  font-size:1.3rem;
+  opacity:.9;
+}
+
+/* MENU CAPSULA */
+.main-nav{
+  background:white;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.nav-menu{
+  list-style:none;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.nav-menu a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:14px 26px;
+  background:#fff3c4;
+  color:#92400e;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s ease;
+}
+
+.nav-menu a:hover{
+  background:#fde68a;
+  transform:translateY(-3px);
+  box-shadow:0 0 18px rgba(251,191,36,.6);
+}
+
+/* CONTENIDO */
+.container{
+  max-width:1200px;
+  margin:80px auto;
+  padding:0 24px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:2.4rem;
+  color:var(--primary);
+  margin-bottom:60px;
+  text-shadow:0 0 14px var(--neon);
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:36px;
+}
+
+.card{
+  background:white;
+  padding:45px 30px;
+  border-radius:26px;
+  text-align:center;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 25px var(--neon);
+}
+
+.card span{
+  font-size:2.8rem;
+  display:block;
+  margin-bottom:14px;
+}
+
+.card small{
+  display:block;
+  margin-top:8px;
+  font-weight:400;
+  color:#64748b;
+}
+
+/* MODAL VIDEO */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(2,6,23,.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:200;
+}
+
+.modal.active{
+  display:flex;
+}
+
+.modal-content{
+  background:#020617;
+  border-radius:22px;
+  width:92%;
+  max-width:450px;
+  padding:24px;
+  position:relative;
+  box-shadow:0 0 30px var(--neon);
+}
+
+.modal-content video{
+  width:100%;
+  border-radius:18px;
+}
+
+/* BOTON CERRAR */
+.close-btn{
+  position:absolute;
+  top:-16px;
+  right:-16px;
+  background:#ef4444;
+  color:white;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#c7d2fe;
+  text-align:center;
+  padding:45px 20px;
+  margin-top:100px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-top h1{
+    font-size:2.2rem;
+  }
+
+  .nav-menu a{
+    padding:12px 20px;
+    font-size:.9rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero-top">
+  <h1>EBDV 2026</h1>
+  <p>Más que vencedores</p>
+</header>
+
+<!-- MENU -->
+<nav class="main-nav">
+  <div class="nav-container">
+    <ul class="nav-menu">
+      <li><a href="index.html">🏠 Inicio</a></li>
+      
+      <li><a href="galeria.html">📸 Galería</a></li>
+      <li><a href="preescolares.html">👶 Preescolares</a></li>
+      <li><a href="escolares.html">🧒 Escolares</a></li>
+      <li><a href="adolescentes.html">🧑 Adolescentes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CONTENIDO -->
+<section class="container">
+  <h2 class="section-title">Lecciones Bíblicas</h2>
+
+  <div class="cards">
+    <div class="card">
+      <span>📘</span>
+      Lección 1
+      <small>Click para ver el video</small>
+    </div>
+
+    <div class="card" onclick="openModal()">
+      <span>📗</span>
+      <p> VENCEDORES SOBRE GITANTES </p>
+      Lección 2
+      <small>Click para ver el video</small>
+    </div>
+
+    <div class="card">
+      <span>📕</span>
+      <p>  VENCEDORES EN MEDIO DE LAS PRUEBAS </p>
+      Lección 3
+      <small>Click para ver el video</small>
+    </div>
+
+    <div class="card">
+      <span>📙</span>
+      Lección 4
+      <small>Click para ver el video</small>
+    </div>
+
+    <div class="card">
+      <span>📒</span>
+      Lección 5
+      <small>Click para ver el video</small>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL VIDEO -->
+<div class="modal" id="videoModal">
+  <div class="modal-content">
+    <div class="close-btn" onclick="closeModal()">✕</div>
+    <video id="lessonVideo" controls>
+      <source src="videos/leccion 2.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 EBDV – Más que vencedores<br>
+  Iglesia Cristiana
+</footer>
+
+<script>
+function openModal(){
+  document.getElementById("videoModal").classList.add("active");
+}
+
+function closeModal(){
+  const video = document.getElementById("lessonVideo");
+  video.pause();
+  video.currentTime = 0;
+  document.getElementById("videoModal").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

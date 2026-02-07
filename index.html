@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Linaje Escogido </title>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#020617;
+      color:white;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:
+        linear-gradient(rgba(2,6,23,.85),rgba(2,6,23,.95)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65") center/cover;
+      padding:40px 20px;
+    }
+
+    .hero h1{
+      font-size:48px;
+      margin-bottom:15px;
+      letter-spacing:2px;
+    }
+
+    .hero p{
+      font-size:20px;
+      max-width:750px;
+      opacity:.9;
+    }
+
+    /* SECCIONES */
+    section{
+      padding:80px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:50px;
+    }
+
+    /* TARJETAS */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,.05);
+      padding:35px 30px;
+      border-radius:25px;
+      text-align:center;
+      box-shadow:0 0 25px rgba(0,0,0,.6);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 35px rgba(99,102,241,.6);
+    }
+
+    .card i{
+      font-size:42px;
+      color:#6366f1;
+      margin-bottom:20px;
+    }
+
+    /* EVENTOS */
+    .event{
+      border-left:4px solid #6366f1;
+      padding:25px;
+      border-radius:15px;
+      background:rgba(255,255,255,.04);
+    }
+
+    .event span{
+      display:block;
+      font-size:14px;
+      opacity:.7;
+      margin-bottom:8px;
+    }
+
+    /* ACTIVIDAD EBDV ABAJO */
+    .actividad{
+      background:rgba(255,255,255,.06);
+      border:2px solid #6366f1;
+      padding:35px 45px;
+      border-radius:30px;
+      box-shadow:
+        0 0 20px rgba(99,102,241,.6),
+        0 0 40px rgba(99,102,241,.4);
+      transition:.3s;
+      text-decoration:none;
+      color:white;
+      display:block;
+      text-align:center;
+      max-width:600px;
+      margin:50px auto 0;
+    }
+
+    .actividad:hover{
+      box-shadow:
+        0 0 30px rgba(99,102,241,.9),
+        0 0 70px rgba(99,102,241,.6);
+      transform:scale(1.05);
+    }
+
+    .actividad span{
+      display:block;
+      font-size:14px;
+      opacity:.8;
+      margin-bottom:8px;
+      letter-spacing:1px;
+    }
+
+    .actividad strong{
+      font-size:22px;
+      color:#a5b4fc;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      background:#020617;
+      opacity:.9;
+    }
+
+    footer a{
+      color:#6366f1;
+      margin:0 12px;
+      font-size:22px;
+      text-decoration:none;
+    }
+
+    footer a:hover{
+      color:white;
+      text-shadow:0 0 15px #6366f1;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Linaje Escogido </h1>
+  <p>
+    Somos una generación llamada a vivir conforme al propósito de Dios,
+    afirmados en la fe, la unidad y la identidad en Cristo.
+  </p>
+</div>
+
+<!-- VISIÓN -->
+<section>
+  <h2 class="title">Nuestra Visión</h2>
+
+  <div class="grid">
+    <div class="card">
+      <i class="fas fa-cross"></i>
+      <h3>Fe</h3>
+      <p>Crecemos en la Palabra de Dios y en una relación viva con Cristo.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-users"></i>
+      <h3>Unidad</h3>
+      <p>Somos una familia que camina junta edificándose en amor.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-fire"></i>
+      <h3>Propósito</h3>
+      <p>Vivimos para glorificar a Dios cumpliendo Su llamado.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- ACTIVIDAD EN PROCESO ABAJO -->
+  <a href="ebdv.html" class="actividad">
+    <span>ACTIVIDAD EN PROCESO</span>
+    <strong>EBDV 2026 – Más que vencedores</strong>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Síguenos</p>
+  <a href="#"><i class="fab fa-tiktok"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <p style="margin-top:15px;">© 2026 Linaje Escogido </p>
+</footer>
+
+</body>
+</html>

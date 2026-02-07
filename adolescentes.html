@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adolescentes | EBDV 2026</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --primary:#6366f1;
+  --secondary:#4338ca;
+  --dark:#020617;
+  --card:#0f172a;
+  --text:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,#020617,#000);
+  color:var(--text);
+}
+
+/* HERO */
+header{
+  background:linear-gradient(135deg,#111827,#020617);
+  padding:90px 20px;
+  text-align:center;
+  box-shadow:0 0 40px rgba(99,102,241,.4);
+}
+
+header h1{
+  font-size:3.2rem;
+  color:white;
+  text-shadow:0 0 25px rgba(99,102,241,.7);
+}
+
+header p{
+  margin-top:14px;
+  font-size:1.2rem;
+  color:#c7d2fe;
+}
+
+/* NAV */
+nav{
+  background:#020617;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid #1e293b;
+}
+
+.nav-box{
+  max-width:1200px;
+  margin:auto;
+  padding:18px;
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.nav-box a{
+  text-decoration:none;
+  padding:12px 26px;
+  background:#111827;
+  color:#c7d2fe;
+  border-radius:999px;
+  font-weight:600;
+  transition:.3s;
+  border:1px solid #1e293b;
+}
+
+.nav-box a:hover{
+  background:var(--secondary);
+  color:white;
+  transform:translateY(-2px);
+  box-shadow:0 0 20px rgba(99,102,241,.6);
+}
+
+/* CONTENIDO */
+.content{
+  max-width:1100px;
+  margin:70px auto;
+  padding:45px;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border-radius:28px;
+  box-shadow:0 30px 60px rgba(0,0,0,.7);
+}
+
+.content h2{
+  font-size:2.2rem;
+  margin-bottom:18px;
+  color:#c7d2fe;
+}
+
+.content p{
+  line-height:1.8;
+  margin-bottom:45px;
+  color:#d1d5db;
+}
+
+/* GALERÍA */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:26px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:22px;
+  cursor:pointer;
+  transition:.35s;
+  border:1px solid #1e293b;
+  box-shadow:0 18px 35px rgba(0,0,0,.7);
+}
+
+.gallery img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 35px rgba(99,102,241,.8);
+}
+
+/* FOTO GRUPAL */
+.group-photo{
+  margin-top:70px;
+  text-align:center;
+}
+
+.group-photo h3{
+  margin-bottom:25px;
+  color:#c7d2fe;
+  font-size:1.6rem;
+}
+
+.group-photo img{
+  width:100%;
+  max-width:720px;
+  border-radius:30px;
+  cursor:pointer;
+  border:2px solid #312e81;
+  box-shadow:0 0 45px rgba(99,102,241,.7);
+  transition:.35s;
+}
+
+.group-photo img:hover{
+  transform:scale(1.04);
+}
+
+/* MODAL */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.9);
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+.modal img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:20px;
+  box-shadow:0 0 40px rgba(99,102,241,.8);
+}
+
+.modal span{
+  position:absolute;
+  top:25px;
+  right:35px;
+  font-size:3rem;
+  color:white;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#c7d2fe;
+  text-align:center;
+  padding:50px 15px;
+  border-top:1px solid #1e293b;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header h1{
+    font-size:2.4rem;
+  }
+
+  .content{
+    padding:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Salón de Adolescentes</h1>
+  <p>Formación juvenil integral</p>
+</header>
+
+<nav>
+  <div class="nav-box">
+    <a href="index.html">🏠 Inicio</a>
+    <a href="ebdv.html">📘 EBDV</a>
+    <a href="galeria.html">📸 Galería</a>
+    <a href="preescolares.html">👶 Preescolares</a>
+    <a href="escolares.html">🧒 Escolares</a>
+  </div>
+</nav>
+
+<section class="content">
+  <h2>Información</h2>
+  <p>
+    El salón de adolescentes es un espacio donde los jóvenes fortalecen su fe,
+    comparten experiencias, reciben enseñanzas bíblicas y participan en
+    dinámicas que los ayudan a crecer espiritualmente y como personas.
+  </p>
+
+  <h2>Momentos del salón</h2>
+
+  <div class="gallery">
+    <img src="imagenes/1 adolecentes.jpeg" onclick="openModal(this.src)">
+    <img src="imagenes/2 adolecentes.jpeg" onclick="openModal(this.src)">
+    <img src="imagenes/3 adolecentes.jpeg" onclick="openModal(this.src)">
+    <img src="imagenes/4 adolecentes.jpeg" onclick="openModal(this.src)">
+    <img src="imagenes/5 adolecentes.jpeg" onclick="openModal(this.src)">
+  </div>
+
+  <div class="group-photo">
+    <h3>📸 Foto grupal – Recuerdo especial del salón</h3>
+    <img src="imagenes/6 adolecentes.jpeg" onclick="openModal(this.src)">
+  </div>
+</section>
+
+<footer>
+  © 2026 EBDV – Más que vencedores<br>
+  Iglesia Cristiana
+</footer>
+
+<div class="modal" id="modal">
+  <span onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<script>
+function openModal(src){
+  document.getElementById("modal").style.display="flex";
+  document.getElementById("modalImg").src=src;
+}
+function closeModal(){
+  document.getElementById("modal").style.display="none";
+}
+</script>
+
+</body>
+</html>
